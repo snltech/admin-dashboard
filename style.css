@@ -136,6 +136,10 @@ body {
     width: 100px;
 }
 
+.d button:active {
+    transform: scale(90%);
+}
+
 .maincontent {
     background-color: lightgray;
 }
