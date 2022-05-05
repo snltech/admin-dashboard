@@ -51,8 +51,9 @@ body {
     box-shadow: 0 20px 10px -20px gray;
     display: grid;
     grid-template:
-        'search profile'
-        'hello action';
+        'search profile' 1fr
+        'hello action' 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .a,
@@ -69,16 +70,70 @@ body {
     grid-area: search;
 }
 
-.b {
-    grid-area: profile;
-}
-
-input[type="text"]{
+.a input[type="text"] {
     border-radius: 10px;
     border: 0px solid grey;
     background: lightgray;
     flex: 1;
     height: 32px;
+}
+
+.a input[type="text"]:focus {
+    border: 0px;
+}
+
+.b {
+    grid-area: profile;
+    justify-content: center;
+    gap: 40px;
+}
+
+.b > h2 {
+    font-family: monospace;
+    font-size: 22px;
+}
+
+.usericon {
+    background: lightgray;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.c {
+    color: black;
+    grid-area: hello;
+    font-family: monospace;
+}
+
+.c .usericon{
+    padding: 20px;
+    align-self: center;
+}
+
+.c > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.c > div > h2 {
+    margin: 5px 0px;
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+}
+
+.d button {
+    background-color: rgba(0, 132, 176, 0.826);
+    border: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 100px;
 }
 
 .maincontent {
