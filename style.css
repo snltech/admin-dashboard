@@ -188,7 +188,7 @@ body {
     font-weight: bold;
     grid-area: 2/2/3/3;
     gap: 30px;
-    padding: 10px 0px;
+    padding: 10px 15px 0px 0px;
 }
 
 .side-container h3{
@@ -197,7 +197,7 @@ body {
 }
 
 .sidebox1{
-    padding: 20px 20px;
+    padding: 5px 20px;
     background-color: white;
     border-radius: 15px;
 }
